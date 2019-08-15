@@ -1,11 +1,11 @@
 ---
 platform: linux
-inputs:
-  - name: source-repo
 image_resource:
   type: docker-image
   source: {repository: testcafe/testcafe}
-  tag: "latest"  
+  tag: "latest"
+inputs:
+  - name: source-repo
 run:
   path: sh 
   args:	
@@ -13,5 +13,4 @@ run:
     - |	
       echo 'helloworld'
       testcafe --version
-      
       testcafe chrome ./source-repo/tests/test.js
