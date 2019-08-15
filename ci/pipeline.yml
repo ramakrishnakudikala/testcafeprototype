@@ -10,7 +10,7 @@ groups:
 #  | || | (_) | _ \__ \
 #   \__/ \___/|___/___/
 jobs:
-- name: job-hello-world
+- name: run-tests
   public: true
   plan:
   - get: source-repo
