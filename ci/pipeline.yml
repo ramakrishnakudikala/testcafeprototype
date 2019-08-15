@@ -1,0 +1,26 @@
+
+groups:  
+  - name: overview
+    jobs:
+      - run-tests
+   
+
+#      _  ___  ___ ___
+#   _ | |/ _ \| _ ) __|
+#  | || | (_) | _ \__ \
+#   \__/ \___/|___/___/
+jobs:
+- name: job-hello-world
+  public: true
+  plan:
+  - get: source-repo
+  - task: hello-world
+    file: source-repo/tasks/testjob.yml
+
+
+resources:
+- name: source-repo
+  type: git
+  source:
+    uri: https://github.com/ramakrishnakudikala/testcafeprototype.git
+    branch: master
