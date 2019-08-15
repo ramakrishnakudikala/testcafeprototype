@@ -15,7 +15,7 @@ jobs:
   plan:
   - get: source-repo
   - task: hello-world
-    file: source-repo/tasks/testjob.yml
+    file: source-repo/ci/tasks/testjob.yml
 
 
 resources:
