@@ -8,9 +8,9 @@ inputs:
   - name: source-repo
 run:
   path: sh 
-  args:	
-    - -exc	
-    - |	
+  args:
+    - -exc
+    - |
       echo 'helloworld'
       testcafe --version
       testcafe chrome ./source-repo/tests/test.js
