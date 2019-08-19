@@ -16,3 +16,5 @@ run:
       testcafe --version
       cd ./source-repo
       ls
+
+      testcafe chrome ./source-repo/tests/test.js
