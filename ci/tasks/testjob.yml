@@ -5,6 +5,8 @@ image_resource:
   source: 
     repository: testcafe/testcafe
     tag: "latest"
+inputs:
+  - name: source-repo
 run:
   path: sh 
   args:
@@ -12,3 +14,5 @@ run:
     - |
       echo 'helloworld'
       testcafe --version
+      cd ./source-repo
+      ls
