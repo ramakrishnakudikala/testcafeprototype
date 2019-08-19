@@ -17,4 +17,4 @@ run:
       cd ./source-repo
       ls
 
-      testcafe chrome ./source-repo/tests/test.js
+      testcafe "chrome:headless" ./source-repo/tests/test.js
