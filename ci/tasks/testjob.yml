@@ -8,7 +8,8 @@ image_resource:
 inputs:
   - name: source-repo
 run:
-  path: sh 
+  path: sh
+  user: root
   args:
     - -exc
     - |
