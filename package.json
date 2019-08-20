@@ -1,0 +1,21 @@
+{
+  "name": "testcafe-prototype",
+  "version": "0.1.0",
+  "description": "Automation tests with testcafe running in concourse ci",
+  "scripts": {
+    "test:automation:ci": "testcafe chromium:headless tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramakrishnakudikala/testcafeprototype.git"
+  },
+  "author": "ramakrishna kudikala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramakrishnakudikala/testcafeprototype/issues"
+  },
+  "homepage": "https://github.com/ramakrishnakudikala/testcafeprototype#readme",
+  "dependencies": {
+    "testcafe": "^1.4.1"
+  }
+}

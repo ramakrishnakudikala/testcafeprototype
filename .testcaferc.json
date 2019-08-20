@@ -1,0 +1,10 @@
+{
+    "browsers": "chrome",
+    "selectorTimeout": 60000,
+    "assertionTimeout": 60000,
+    "concurrency": 1,
+    "speed": 1,
+    "debugOnFail": false,
+    "skipJsErrors": true
+    
+  }

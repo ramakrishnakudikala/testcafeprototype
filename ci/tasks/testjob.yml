@@ -15,6 +15,10 @@ run:
       echo 'helloworld'
       testcafe --version
       cd ./source-repo
-      ls
+      npm install
+      
+      ls -lr
 
-      testcafe "chrome:headless" ./source-repo/tests/test.js
+      mkdir -p testresults
+
+      npm run test:automation:ci
