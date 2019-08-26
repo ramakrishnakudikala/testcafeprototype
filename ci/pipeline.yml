@@ -14,7 +14,7 @@ jobs:
   public: true
   plan:
   - get: source-repo
-  - task: testcafe-test-job
+  - task: hello-world
     privileged: true
     file: source-repo/ci/tasks/testjob.yml
 
