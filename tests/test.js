@@ -16,7 +16,7 @@ const getResponseData = (url) => new Promise((resolve, reject) => {
 fixture `Test REST API`;
 
 test('endpoint must return 200', async t => {
-    const response = await getResponseData('http://jsonplaceholder.typicode.com/todos');
+    const response = await getResponseData('https://www.xfinity.com/healthcheck');
     await t
         .expect(response.statusCode).eql(200)
 });
